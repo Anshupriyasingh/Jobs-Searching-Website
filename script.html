@@ -1,0 +1,15 @@
+<html>
+<form name="myForm" action="form_apply.php" onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+<input type="submit" value="Submit">
+<script>
+function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x >10) {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+</form>
+</html>
